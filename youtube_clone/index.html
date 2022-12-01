@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youtube Mobile Clone</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"
-    />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Youtube Mobile Clone</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js" defer></script>
 </head>
-<!-- 
+<!--
     fab fa-youtube
     fas fa-search
     fas fa-ellipsis-v
@@ -22,99 +22,120 @@
     fab fa-font-awesome-flag
 
  -->
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="logo">
-            <i class="fab fa-youtube"></i>
-            <span class="title">Youtube</span>
-        </div>
-        <div class="icons">
-            <i class="fas fa-search"></i>
-            <i class="fas fa-ellipsis-v"></i>
-        </div>
-    </header>
+	<!-- Header -->
+	<header>
+		<div class="logo">
+			<i class="fab fa-youtube"></i>
+			<span class="title">Youtube</span>
+		</div>
+		<div class="icons">
+			<i class="fas fa-search"></i>
+			<i class="fas fa-ellipsis-v"></i>
+		</div>
+	</header>
 
-    <!-- Video Player -->
-    <section class="player">
-        <video controls src="video/video.mp4"></video>
-    </section>
+	<!-- Video Player -->
+	<section class="player">
+		<video controls src="video/video.mp4"></video>
+	</section>
 
-    <!-- video Info -->
-    <section class="info">
-        <div class="metadata">
-            <ul class="hashtags">
-                <li>#ClonCoding</li>
-                <li>#Youtube</li>
-                <li>#JJYoon</li>
-            </ul>
-            <div class="titleAndButton">
-                <span class="title">
-                    Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript JJYoon과 함께하는 프론트엔드 실전 입문편
-                </span>
-                <button class="moreBtn">
-                    <i class="fas fa-caret-down"></i>
-                </button>
-            </div>
-            <div class="views">
-                <span class="views">1M views 1 Month ago</span>
-            </div>
-        </div>
-        <ul class="actions">
-            <li><button><i class="fas fa-thumbs-up"></i></button></li>
-            <li><button><i class="fas fa-thumbs-down"></i></button></li>
-            <li><button><i class="fas fa-share"></i></button></li>
-            <li><button><i class="fas fa-plus"></i></button></li>
-        </ul>
-        <!-- Channel Description -->
-        <div class="channel">
-            <div class="metadata">
-                <img src="image/photo.png" alt="">
-                <div class="info">
-                    <span class="name">개발코딩 by JJYoon</span>
-                    <div class="subscribers">1M subscribers</div>
-                </div>
-            </div>
-            <button class="subscribe">subscribe</button>
-        </div>
-    </section>
-    <section class="UpNext">
-        <span class="title">Up next</span>
-        <ul>
-            <li class="item">
-                <img src="image/thumbnail1.jpg" alt="">
-                <div class="info">
-                    <span class="title">
-                        코딩의 기초. 어떻게 공부하는가? | 프론트엔드 개발자 입문편 
-                    </span>
-                    <span class="name">개발코딩 by JJYoon</span>
-                    <span class="views">32K views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-            <li class="item">
-                <img src="image/thumbnail2.jpg" alt="">
-                <div class="info">
-                    <span class="title">
-                        공부하기가 싫어질 때 마음을 다스리는법 | 프론트엔드 개발자 입문편 
-                    </span>
-                    <span class="name">개발코딩 by JJYoon</span>
-                    <span class="views">19K views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-            <li class="item">
-                <img src="image/thumbnail3.jpg" alt="">
-                <div class="info">
-                    <span class="title">
-                        코딩할 때 듣기 좋은 음악 | 프론트엔드 개발자 입문편 
-                    </span>
-                    <span class="name">개발코딩 by JJYoon</span>
-                    <span class="views">145K views</span>
-                </div>
-                <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
-            </li>
-        </ul>
-    </section>
+	<div class="infoAndUpNext">
+		<!-- video Info -->
+		<section class="info">
+			<div class="metadata">
+				<ul class="hashtags">
+					<li>#ClonCoding</li>
+					<li>#Youtube</li>
+					<li>#JJYoon</li>
+				</ul>
+				<div class="titleAndButton">
+					<span class="title clamp">
+						Clone Coding: Youtube Mobile Website 유튜브 모바일 웹사이트 따라 만들기 | 프론트엔드 개발자 입문편: HTML, CSS, Javascript JJYoon과 함께하는 프론트엔드 실전 입문편
+					</span>
+					<button class="moreBtn">
+						<i class="fas fa-caret-down"></i>
+					</button>
+				</div>
+				<span class="views">1M views 1 Month ago</span>
+			</div>
+			<ul class="actions">
+				<li>
+					<button><i class="active fas fa-thumbs-up"></i><span>1.2K</span></button>
+				</li>
+				<li>
+					<button><i class="fas fa-thumbs-down"></i><span>0</span></button>
+				</li>
+				<li>
+					<button><i class="fas fa-share"></i><span>Share</span></button>
+				</li>
+				<li>
+					<button><i class="fas fa-plus"></i><span>Save</span></button>
+				</li>
+				<li>
+					<button><i class="fas fa-flag"></i><span>Report</span></button>
+				</li>
+			</ul>
+			<!-- Channel Description -->
+			<div class="channel">
+				<div class="metadata">
+					<img src="image/photo.png" alt="">
+					<div class="info">
+						<span class="name">개발코딩 by JJYoon</span>
+						<div class="subscribers">1M subscribers</div>
+					</div>
+				</div>
+				<button class="subscribe">subscribe</button>
+			</div>
+		</section>
+
+		<!-- Up Next -->
+		<section class="upNext">
+			<span class="title">Up next</span>
+			<ul>
+				<li class="item">
+					<div class="img">
+						<img src="image/thumbnail1.jpg" alt="">
+					</div>
+					<div class="info">
+						<span class="title">
+							코딩의 기초. 어떻게 공부하는가? | 프론트엔드 개발자 입문편
+						</span>
+						<span class="name">개발코딩 by JJYoon</span>
+						<span class="views">32K views</span>
+					</div>
+					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+				</li>
+				<li class="item">
+					<div class="img">
+						<img src="image/thumbnail2.jpg" alt="">
+					</div>
+					<div class="info">
+						<span class="title">
+							공부하기가 싫어질 때 마음을 다스리는법 | 프론트엔드 개발자 입문편
+						</span>
+						<span class="name">개발코딩 by JJYoon</span>
+						<span class="views">19K views</span>
+					</div>
+					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+				</li>
+				<li class="item">
+					<div class="img">
+						<img src="image/thumbnail3.jpg" alt="">
+					</div>
+					<div class="info">
+						<span class="title">
+							코딩할 때 듣기 좋은 음악 | 프론트엔드 개발자 입문편
+						</span>
+						<span class="name">개발코딩 by JJYoon</span>
+						<span class="views">145K views</span>
+					</div>
+					<button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+				</li>
+			</ul>
+		</section>
+	</div>
 </body>
+
 </html>
